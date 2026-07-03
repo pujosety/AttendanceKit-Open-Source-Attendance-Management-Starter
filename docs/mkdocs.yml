@@ -6,6 +6,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - content.code.copy
+
 nav:
   - Home: index.md
   - Installation: installation.md
@@ -15,8 +16,10 @@ nav:
   - Troubleshooting: troubleshooting.md
   - FAQ: faq.md
   - Roadmap: roadmap.md
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
+
 extra:
   version: 0.1.0
