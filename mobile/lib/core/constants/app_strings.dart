@@ -1,4 +1,4 @@
-abstract class AppStrings {
+class AppStrings {
   static const appName = 'AttendanceKit';
   static const loginTitle = 'Sign in to AttendanceKit';
   static const email = 'Email';

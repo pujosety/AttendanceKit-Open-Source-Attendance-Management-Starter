@@ -1,12 +1,18 @@
-class AppRoute {
-  static const String splash = '/';
-  static const String login = '/login';
-  static const String dashboard = '/dashboard';
-  static const String attendanceHistory = '/history';
-  static const String leave = '/leave';
-  static const String report = '/report';
-  static const String calendar = '/calendar';
-  static const String notifications = '/notifications';
-  static const String profile = '/profile';
-  static const String settings = '/settings';
+import 'package:flutter/material.dart';
+
+class AppRoutes {
+  const AppRoutes();
+
+  static const splash = '/';
+  static const login = '/login';
+  static const dashboard = '/dashboard';
+  static const history = '/history';
+  static const leave = '/leave';
+  static const report = '/report';
+  static const notification = '/notification';
+  static const calendar = '/calendar';
+  static const profile = '/profile';
+  static const settings = '/settings';
+
+  static Map<String, WidgetBuilder> get map => const {};
 }
