@@ -1,0 +1,54 @@
+openapi: 3.0.3
+info:
+  title: AttendanceKit API
+  version: v1
+servers:
+  - url: http://localhost:8000/api/v1
+paths:
+  /auth/login:
+    post:
+      summary: Login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: {type: string}
+                password: {type: string}
+      responses:
+        '200':
+          description: Authenticated
+  /attendances:
+    get:
+      summary: Attendance history
+      responses:
+        '200':
+          description: OK
+    post/check-in:
+      summary: Check in
+      responses:
+        '201':
+          description: Checked in
+  /reports:
+    get:
+      summary: Reports
+    post:
+      summary: Create report
+  /leaves:
+    get:
+      summary: Leave list
+    post:
+      summary: Create leave
+  /notifications:
+    get:
+      summary: Notification list
+  /profile:
+    get:
+      summary: Profile
+    patch:
+      summary: Update profile
+  /settings:
+    get:
+      summary: App settings
