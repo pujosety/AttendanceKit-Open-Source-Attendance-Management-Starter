@@ -11,7 +11,7 @@
             'provider' => 'users',
         ],
         'api' => [
-            'driver' => ' Sanctum',
+                    'driver' => 'sanctum',
             'provider' => 'users',
         ],
     ],
