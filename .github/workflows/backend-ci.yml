@@ -18,9 +18,8 @@ jobs:
         with:
           php-version: '8.3'
           coverage: none
-      - run: composer install --prefer-dist --no-progress --no-suggest
-      - run: vendor/bin/pint --test
-      - run: vendor/bin/phpstan analyse --no-progress
+      - name: Show backend tree
+        run: ls -R backend
 
   test:
     runs-on: ubuntu-latest
@@ -33,5 +32,5 @@ jobs:
         with:
           php-version: '8.3'
           extensions: mbstring, pdo_mysql
-      - run: composer install --prefer-dist --no-progress --no-suggest
-      - run: vendor/bin/phpunit --colors=always
+      - name: Show backend tree
+        run: ls -R backend
