@@ -1,8 +1,12 @@
 # Screenshots
 
-> Add your screenshots in `assets/` folder after running the app.
+Add visual assets under `assets/` after running the app.
 
-Suggested filenames:
-- `screenshot-login.png`
-- `screenshot-dashboard.png`
-- `demo-checkin.gif`
+Suggested files:
+
+- `assets/screenshot-login.png`
+- `assets/screenshot-dashboard.png`
+- `assets/screenshot-history.png`
+- `assets/demo-checkin.gif`
+
+Screenshots help reviewers understand the product faster. Update them after UI changes.
