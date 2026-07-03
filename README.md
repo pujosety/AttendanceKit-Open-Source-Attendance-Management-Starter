@@ -1,4 +1,12 @@
-# AttendanceKit
+# AttendanceKit-Open-Source-Attendance-Management-Starter
+
+![License](https://img.shields.io/badge/License-MIT-green)
+
+Modern open-source attendance management starter built with Flutter and Laravel. GPS check-in, camera verification, reports, leave management, REST API, and production-ready architecture. Designed for companies, schools, and organizations.
+
+---
+
+ AttendanceKit
 
 > Modern open-source attendance management starter built with **Flutter** and **Laravel**. GPS check-in, camera verification, reports, leave management, and a production-ready REST API.
 
