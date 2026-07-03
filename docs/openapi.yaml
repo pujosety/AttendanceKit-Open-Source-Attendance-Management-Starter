@@ -15,40 +15,95 @@ paths:
             schema:
               type: object
               properties:
-                email: {type: string}
-                password: {type: string}
+                email: { type: string }
+                password: { type: string }
       responses:
         '200':
           description: Authenticated
+  /auth/logout:
+    post:
+      summary: Logout
+      responses:
+        '200':
+          description: Logged out
+  /user:
+    get:
+      summary: Get current user
+      responses:
+        '200':
+          description: OK
   /attendances:
     get:
       summary: Attendance history
       responses:
         '200':
           description: OK
-    post/check-in:
+  /attendances/check-in:
+    post:
       summary: Check in
       responses:
         '201':
           description: Checked in
+  /attendances/check-out:
+    post:
+      summary: Check out
+      responses:
+        '200':
+          description: Checked out
   /reports:
     get:
-      summary: Reports
+      summary: List reports
+      responses:
+        '200':
+          description: OK
     post:
       summary: Create report
+      responses:
+        '201':
+          description: Created
   /leaves:
     get:
-      summary: Leave list
+      summary: List leaves
+      responses:
+        '200':
+          description: OK
     post:
       summary: Create leave
+      responses:
+        '201':
+          description: Created
   /notifications:
     get:
-      summary: Notification list
+      summary: List notifications
+      responses:
+        '200':
+          description: OK
+  /notifications/{id}/read:
+    patch:
+      summary: Mark notification as read
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
   /profile:
     get:
-      summary: Profile
+      summary: Get profile
+      responses:
+        '200':
+          description: OK
     patch:
       summary: Update profile
+      responses:
+        '200':
+          description: OK
   /settings:
     get:
-      summary: App settings
+      summary: Get settings
+      responses:
+        '200':
+          description: OK
