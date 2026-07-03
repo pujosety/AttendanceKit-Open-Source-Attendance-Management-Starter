@@ -1,0 +1,33 @@
+{
+  "name": "pujosety/attendancekit",
+  "description": "AttendanceKit backend — Laravel-based attendance management starter",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^12.0",
+    "laravel/sanctum": "^4.0",
+    "spatie/laravel-permission": "^6.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.18",
+    "phpstan/phpstan": "^1.11",
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "database/seeders/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ]
+  }
+}

@@ -1,16 +1,7 @@
 # Release Notes
 
-## v0.1.0 — Initial Release
+## 0.1.0 — Initial scaffold
 
-### Added
-- Flutter mobile scaffold with Riverpod-ready structure
-- Laravel 12-style backend scaffold
-- Attendance modules: login, dashboard, check-in/out, history, leave, report, notification, profile, settings
-- Repository pattern and API controllers
-- Docker Compose setup
-- Postman collection
-- OpenAPI specification
-- Documentation stubs
-
-### Notes
-This is an initial scaffold release. Core build validation should be completed before production use.
+- Added Laravel backend API scaffold with repositories, controllers, routes, migrations, and seeders.
+- Added Flutter mobile app scaffolding with core, data layer, models, local sources, permissions, and login screen.
+- Added CI workflows, Docker Compose, setup scripts, Postman collection, OpenAPI draft, docs structure, and open source templates.
