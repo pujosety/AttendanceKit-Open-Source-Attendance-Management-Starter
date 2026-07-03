@@ -1,39 +1,48 @@
 # Installation
-## Backend
-- PHP 8.3+ with Composer
-- MySQL 8.+ and Redis recommended
-- Steps:
-  1. `cd backend && composer install`
-  2. copy `.env.example` to `.env`
-  3. `php artisan key:generate`
-  4. `php artisan migrate --seed`
 
-Environment variables live in backend `.env`:
-- `DB_CONNECTION`, `DB_HOST`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`
-- `REDIS_HOST`
-- `JWT_SECRET`
+Choose your path:
+
+- **Recommended:** Docker Compose for fastest start.
+- **Custom:** Manual backend + mobile setup when you need full control.
+
+## Docker Compose
+
+```bash
+docker compose up
+```
+
+Wait for backend and database health checks, then continue to manual verification below.
+
+## Backend
+
+Requirements: PHP 8.3+, Composer, MySQL 8+, Redis recommended.
+
+```bash
+cd backend
+cp .env.example .env
+composer install
+php artisan key:generate
+php artisan migrate --seed
+```
 
 ## Mobile
-- Flutter 3.4+
-- Steps:
-  1. `cd mobile`
-  2. `flutter pub get`
-  3. `flutter run`
 
-> Demo account: `admin@example.com` / `password`
+Requirements: Flutter 3.4+, device emulator or physical device.
 
-# API Documentation
+```bash
+cd mobile
+flutter pub get
+flutter run
+```
 
-Base URL: `http://localhost:8000/api/v1`
+Use the demo account in `docs/demo.md` or create a user via API.
 
-## Mobile Data Flow
-- `DioClient` -> `AttendanceKitService`
-- Token stored in secure storage via `AuthLocalSource`
-- Offline queue stored in secure storage
-- Notifications initialized via `PlatformProxy`
-- Model local storage via `FileStorage`
+## First login
 
-# Contributing
-- Fork / branch off `main`
-- Keep PR scoped to one concern
-- Update docs for any new route/field
+- Base API: `http://localhost:8000/api/v1`
+- Demo email: `admin@example.com`
+- Demo password: `password`
+
+## Postman
+
+Import `postman/attendance-kit.postman_collection.json` to explore endpoints without building the mobile app.
