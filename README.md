@@ -1,77 +1,91 @@
 # AttendanceKit
 
-> Generic open-source attendance management starter kit. Clean, modular, and ready for production.
+> Modern open-source attendance management starter built with **Flutter** and **Laravel**. GPS check-in, camera verification, reports, leave management, and a production-ready REST API.
 
-![CI Mobile](https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter/actions/workflows/flutter-ci.yml/badge.svg)
-![CI Backend](https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter/actions/workflows/backend-ci.yml/badge.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)
-![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel)
-![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?logo=php)
-![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql)
-![Android](https://img.shields.io/badge/Android-ready-3DDC84?logo=android)
-![iOS](https://img.shields.io/badge/iOS-ready-000000?logo=apple)
-![API](https://img.shields.io/badge/REST-API-green)
-![Version](https://img.shields.io/badge/Version-0.1.0-blue)
-![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker)
+`AttendanceKit` is a full-stack starter for companies, schools, and organizations that want a real attendance workflow — not another toy login demo. It combines a Flutter mobile app with a Laravel backend, containerized setup with Docker, and documentation ready for production deployment.
 
-<div align="center">
- <img src="assets/banner.png" alt="AttendanceKit" height="160">
-</div>
+---
 
-## Features
+## What problem does this solve?
 
-### Mobile
-- Login
-- Dashboard
-- Check In
-- Check Out
-- Daily Report
-- Attendance History
-- Leave Request
-- Calendar
-- Notifications
-- Profile
-- Settings
+Manual attendance is slow. Photo-only check-in is easy to fake. Split mobile/backend teams often rebuild the same modules again and again.
 
-### Attendance Features
-- GPS Location
-- Camera Verification
-- Photo Upload
-- Offline Queue
-- API Synchronization
+This repo solves that by giving you a ready-made, testable system with location-based check-in, camera verification, leave workflows, reporting, notifications, and an API you can extend.
 
-## Screenshots
+---
 
-| Screenshot | Preview |
-|------------|---------|
-| ![Login](assets/screenshot-login.png) | ![Dashboard](assets/dashboard.png) |
+## What you get
 
-![Demo](assets/demo.gif)
+- GPS-aware attendance with location checks
+- Camera verification and photo upload
+- Daily and historical attendance reporting
+- Leave request and approval workflow
+- Notification system
+- REST API with Postman collection
+- Docker-based local setup
+- CI workflows for mobile and backend
+- Documentation and ergd/schema references
 
-## Installation
+---
 
-See [docs/installation.md](docs/installation.md) and [docs/deployment.md](docs/deployment.md).
+## Tech Stack
+
+| Area | Tooling |
+|---|---|
+| Mobile | Flutter |
+| Backend | Laravel / PHP |
+| Database | MySQL |
+| Packaging | Docker Compose |
+| CI | GitHub Actions |
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter.git
+cd AttendanceKit-Open-Source-Attendance-Management-Starter
+docker compose up
+```
+
+For detailed setup:
+
+- [Installation Guide](docs/installation.md)
+- [Environment Configuration](docs/environment.md)
+- [Deployment Guide](docs/deployment.md)
+
+---
+
+## Project Structure
+
+| Path | Purpose |
+|---|---|
+| `mobile/` | Flutter app |
+| `backend/` | Laravel API app |
+| `database/` | Schema, ERD, setup docs |
+| `docs/` | Full documentation |
+| `postman/` | API collection |
+| `assets/` | Demo screenshots and GIFs |
+
+---
 
 ## API
 
-See [docs/api.md](docs/api.md), [docs/openapi.yaml](docs/openapi.yaml), and [postman/attendance-kit.postman_collection.json](postman/attendance-kit.postman_collection.json).
+See [docs/api.md](docs/api.md) and [docs/openapi.yaml](docs/openapi.yaml).
 
-## Structure
-
-See [docs/folder-structure.md](docs/folder-structure.md) and [docs/architecture.md](docs/architecture.md).
+---
 
 ## Roadmap
 
 See [docs/roadmap.md](docs/roadmap.md).
 
-## Releases
+---
 
-See [Releases](https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter/releases).
+## Contributing
 
-## Documentation
+We welcome clean, focused contributions. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting pull requests.
 
-See [/docs](/docs).
+---
 
 ## License
 
