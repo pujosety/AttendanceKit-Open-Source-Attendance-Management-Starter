@@ -1,5 +1,8 @@
 # Roadmap
-- V1: Core attendance flow, clean scaffold, mobile dashboard/check in/out/history
+
+- V1: Core attendance flow, clean scaffold, mobile dashboard, check in/out, history
 - V2: Offline queue enabled by default, role-based access control
 - V3: Multi-tenant support
-- V4: Advanced analytics export
+- V4: Advanced analytics and exports
+
+Keep changes small and reviewable. Prefer shipping one complete feature over multiple half-finished additions.
