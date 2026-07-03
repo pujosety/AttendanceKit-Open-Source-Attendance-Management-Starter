@@ -1,0 +1,9 @@
+const Color kColorSchemeSeed = Color(0xFF2563eb);
+const Color kColorPrimary = kColorSchemeSeed;
+const Color kColorBackground = Color(0xFF0F172A);
+const Color kColorSurface = Color(0xFF111827);
+const Color kColorBorder = Color(0xFF334155);
+const Color kColorTextPrimary = Color(0xFFF8FAFC);
+const Color kColorTextSecondary = Color(0xFFCBD5E1);
+const Radius kRadiusMedium = Radius.circular(12);
+const Radius kRadiusSmall = Radius.circular(8);

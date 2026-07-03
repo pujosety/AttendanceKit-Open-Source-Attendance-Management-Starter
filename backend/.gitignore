@@ -1,0 +1,13 @@
+app = *.app
+*.swp
+.vscode
+.phpunit.result.cache
+.php-cs-fixer.cache
+.phpstorm.meta.php
+.DS_Store
+Thumbs.db
+.env
+.env.backup
+phpunit.xml
+docker/nginx/default.conf
+docker/php/Dockerfile
