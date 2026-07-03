@@ -2,7 +2,7 @@
 
 > Generic open-source attendance management starter kit. Clean, modular, and ready for production.
 
-![CI Flutter](https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter/actions/workflows/ci.yml/badge.svg)
+![CI Mobile](https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter/actions/workflows/flutter-ci.yml/badge.svg)
 ![CI Backend](https://github.com/pujosety/AttendanceKit-Open-Source-Attendance-Management-Starter/actions/workflows/backend-ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)

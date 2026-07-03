@@ -1,0 +1,22 @@
+---
+site_name: AttendanceKit Docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Architecture: architecture.md
+  - API: api.md
+  - Deployment: deployment.md
+  - Troubleshooting: troubleshooting.md
+  - FAQ: faq.md
+  - Roadmap: roadmap.md
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+extra:
+  version: 0.1.0
